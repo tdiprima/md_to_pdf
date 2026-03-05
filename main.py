@@ -15,9 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Convert all *.md files in a directory to PDF."
-    )
+    parser = argparse.ArgumentParser(description="Convert all *.md files in a directory to PDF.")
     parser.add_argument("input_dir", help="Directory containing .md files")
     parser.add_argument(
         "--output-dir",

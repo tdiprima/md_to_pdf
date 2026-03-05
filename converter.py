@@ -1,5 +1,4 @@
 import logging
-import os
 from pathlib import Path
 
 import markdown
@@ -120,7 +119,5 @@ def convert_directory(input_dir: Path, output_dir: Path) -> list[Path]:
             logger.exception("Failed to convert %s", md_path)
             errors.append(md_path)
 
-    logger.info(
-        "Done. Converted %d file(s), %d error(s).", len(results), len(errors)
-    )
+    logger.info("Done. Converted %d file(s), %d error(s).", len(results), len(errors))
     return results
