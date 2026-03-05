@@ -25,12 +25,6 @@ python main.py /path/to/your/docs
 python main.py /path/to/your/docs --output-dir /path/to/pdfs
 ```
 
-### How emoji support works:
-
-The CSS font stack in converter.py lists "Apple Color Emoji" first on macOS, then falls back to "Segoe UI Emoji" (Windows) and "Noto Color Emoji" (Linux). 
-
-WeasyPrint uses these system fonts when rendering the HTML, so emoji characters in your Markdown render as color glyphs in the PDF.
-
 On Linux, if emojis appear as boxes, install the Noto Emoji font:
 
 ```sh

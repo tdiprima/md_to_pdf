@@ -9,16 +9,15 @@ logger = logging.getLogger(__name__)
 
 # CSS that ensures emoji render correctly via system emoji fonts
 STYLE = CSS(string="""
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji');
-
 body {
     font-family:
-        "Apple Color Emoji",
+        "DejaVu Sans",
+        "Helvetica Neue",
+        Arial,
+        sans-serif,
         "Segoe UI Emoji",
         "Noto Color Emoji",
-        "Noto Emoji",
-        "DejaVu Sans",
-        sans-serif;
+        "Noto Emoji";
     font-size: 14px;
     line-height: 1.6;
     margin: 40px;
@@ -27,12 +26,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:
-        "Apple Color Emoji",
+        "DejaVu Sans",
+        "Helvetica Neue",
+        Arial,
+        sans-serif,
         "Segoe UI Emoji",
         "Noto Color Emoji",
-        "Noto Emoji",
-        "DejaVu Sans",
-        sans-serif;
+        "Noto Emoji";
     margin-top: 1.2em;
     margin-bottom: 0.4em;
 }
